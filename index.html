@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TBT Cosméticos | Seu estilo, sua essência</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #ffffff;
+            color: #222;
+        }
+
+        header {
+            background: #080808;
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+            border-bottom: 3px solid #c9a646;
+        }
+
+        header h1 {
+            font-size: 38px;
+            letter-spacing: 4px;
+            color: #d4af37;
+        }
+
+        header p {
+            margin-top: 10px;
+            color: #eeeeee;
+        }
+
+        nav {
+            background: #151515;
+            padding: 18px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #d4af37;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        .inicio {
+            background: #080808;
+            color: white;
+            text-align: center;
+            padding: 90px 20px;
+        }
+
+        .inicio h2 {
+            font-size: 36px;
+            color: #d4af37;
+            margin-bottom: 20px;
+        }
+
+        .inicio p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .botao {
+            display: inline-block;
+            background: #d4af37;
+            color: #080808;
+            padding: 14px 28px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .botao:hover {
+            background: white;
+        }
+
+        .sobre {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .sobre h2,
+        .produtos h2,
+        .contato h2 {
+            color: #b18b25;
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .sobre p {
+            max-width: 700px;
+            margin: auto;
+            line-height: 1.7;
+        }
+
+        .produtos {
+            background: #f7f7f7;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .lista-produtos {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin-top: 35px;
+        }
+
+        .produto {
+            background: white;
+            width: 280px;
+            padding: 30px 20px;
+            border: 1px solid #d4af37;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .produto h3 {
+            color: #111;
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+
+        .preco {
+            color: #b18b25;
+            font-size: 25px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        .contato {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        footer {
+            background: #080808;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            border-top: 3px solid #d4af37;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 29px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 8px;
+            }
+
+            .inicio h2 {
+                font-size: 28px;
+            }
+
+            .produto {
+                width: 100%;
+                max-width: 320px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>TBT COSMÉTICOS</h1>
+        <p>Seu estilo, sua essência, seu perfume.</p>
+    </header>
+
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre nós</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <section class="inicio" id="inicio">
+        <h2>Encontre sua essência.</h2>
+        <p>Perfumes que representam sua personalidade e seu estilo.</p>
+
+        <a href="#produtos" class="botao">Conheça nossos perfumes</a>
+    </section>
+
+    <section class="sobre" id="sobre">
+        <h2>Sobre a TBT Cosméticos</h2>
+
+        <p>
+            A TBT Cosméticos acredita que cada pessoa possui uma essência única.
+            Trabalhamos para oferecer perfumes que valorizam sua personalidade,
+            seu estilo e sua autoestima.
+        </p>
+    </section>
+
+    <section class="produtos" id="produtos">
+        <h2>Nossos perfumes</h2>
+
+        <p>Escolha sua fragrância favorita.</p>
+
+        <div class="lista-produtos">
+
+            <div class="produto">
+                <h3>Azad</h3>
+                <p>Uma fragrância para marcar presença.</p>
+                <div class="preco">R$ 300,00</div>
+
+                <a class="botao"
+                   href="https://wa.me/5521994608558?text=Olá! Tenho interesse no perfume Azad.">
+                   Comprar pelo WhatsApp
+                </a>
+            </div>
+
+            <div class="produto">
+                <h3>Fakher Gold</h3>
+                <p>Elegância e personalidade em uma fragrância.</p>
+                <div class="preco">R$ 330,00</div>
+
+                <a class="botao"
+                   href="https://wa.me/5521994608558?text=Olá! Tenho interesse no perfume Fakher Gold.">
+                   Comprar pelo WhatsApp
+                </a>
+            </div>
+
+            <div class="produto">
+                <h3>Azad Bourbon</h3>
+                <p>Uma fragrância para quem tem presença.</p>
+                <div class="preco">R$ 350,00</div>
+
+                <a class="botao"
+                   href="https://wa.me/5521994608558?text=Olá! Tenho interesse no perfume Azad Bourbon.">
+                   Comprar pelo WhatsApp
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contato" id="contato">
+        <h2>Fale com a TBT Cosméticos</h2>
+
+        <p>Gostou de algum perfume? Entre em contato conosco!</p>
+
+        <br>
+
+        <a class="botao"
+           href="https://wa.me/5521994608558?text=Olá! Vim pelo site da TBT Cosméticos.">
+           Conversar pelo WhatsApp
+        </a>
+    </section>
+
+    <footer>
+        <p>© 2026 TBT Cosméticos - Todos os direitos reservados.</p>
+        <p>Seu estilo, sua essência, seu perfume.</p>
+    </footer>
+
+</body>
+</html>
